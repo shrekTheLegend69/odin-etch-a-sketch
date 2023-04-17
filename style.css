@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.grid {
+    border: 1px solid black;
+    flex: 1;
+    background-color: cyan;
+}
