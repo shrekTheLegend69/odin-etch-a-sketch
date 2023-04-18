@@ -26,7 +26,10 @@ pixels.forEach(pixel => {
 const gridButton = document.querySelector('.gridSize');
 
 gridButton.addEventListener('click', function(e) {
-    let size = prompt("Please enter the new grid size (maximum 100):");
+    let size = undefined;
+    do {
+    size = prompt("Please enter the new grid size (maximum 100):");
+    } while (size < 1 || size > 100);
     buildGrid(size);
 });
 
