@@ -12,3 +12,12 @@ for (let i = 0; i < 16; i++) {
         }
 }
 
+// Turn all grid divs black on mouseover
+const pixels = document.querySelectorAll('.grid');
+
+pixels.forEach(pixel => {
+    pixel.addEventListener('mouseover', function(e) {
+        pixel.style.backgroundColor = "black";
+    })
+});
+
